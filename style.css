@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@600;800&display=swap');
+
+@font-face {
+  font-family: 'Figtree', sans-serif;
+  src: url('assets/fonts/Figtree-ExtraBold.woff2') format('woff2'),
+       url('assets/fonts/Figtree-ExtraBold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Figtree', sans-serif;
+  src: url('assets/fonts/Figtree-SemiBold.woff2') format('woff2'),
+        url('assets/fonts/Figtree-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Grey: hsl(0, 0%, 50%);
+  --Black: hsl(0, 0%, 7%);
+  --Yellow: hsl(47, 88%, 63%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--Yellow);
+  color: var(--Black);
+  font-family: 'Figtree', sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.3rem;
+  font-weight: 600;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/*card start*/
+.container {
+  background-color: var(--White);
+  width: 350px;
+  box-shadow: 8px 10px 1px 1px var(--Black);
+  padding: 20px;
+  border-radius: 25px;
+  border: 2px solid currentColor;
+}
+
+.container:hover {
+  box-shadow: 12px 12px 1px 1px var(--Black);
+}
+
+.container > img {
+  border-radius: 9px;
+  width: 100%;
+}
+
+.container > p {
+  color: var(--Grey);
+}
+
+button {
+  background-color: var(--Yellow);
+  padding: 9px 14px;
+  border-radius: 5px;
+  border: none;
+  margin: 15px 0;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+h1 {
+  font-size: 22px;
+  font-weight: 800;
+  cursor: pointer;
+  margin: 17px 0;
+}
+a {
+  color: var(--Black);
+  text-decoration: none;
+}
+
+a:hover, a:active {
+  color:  var(--Yellow);
+}
+
+section {
+  display: flex;
+  align-items: center;
+  font-weight: 800;
+  margin: 12px 0;
+}
+
+section > img {
+  width: 30px;
+  margin-right: 13px;  
+}
+
+/*card end*/
+
+/*footer section*/
+.attribution { 
+  font-size: 17px; 
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
+
+
+@media (max-width: 600px) {
+  main {
+    min-height: 130vh;
+  }
+}
